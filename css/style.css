@@ -9983,3 +9983,23 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+#frameworks-libs1,#frameworks-libs2 {
+  animation: scroll-new 10s linear infinite;
+  width: calc(250px * 10);
+  display: flex;
+  flex-direction: row;
+}
+
+.slide > img{
+  margin-left: 50px;
+}
+
+@keyframes scroll-new {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 5));
+  }
+}
