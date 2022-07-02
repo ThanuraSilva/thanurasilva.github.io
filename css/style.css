@@ -9984,11 +9984,18 @@ h6,
   list-style-type: none;
 }
 
-#frameworks-libs1,#frameworks-libs2 {
-  animation: scroll-new 10s linear infinite;
-  width: calc(250px * 10);
+#frameworks-libs-1{
+  animation: scroll-new 30s linear infinite;
+  width: calc(300px * 10);
   display: flex;
   flex-direction: row;
+}
+#frameworks-libs-2,#frameworks-libs-3,#frameworks-libs-4,#frameworks-libs-5{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 20px;
+  font-weight: bold;
 }
 
 .slide > img{
@@ -9999,7 +10006,11 @@ h6,
   0%{
     transform: translateX(0);
   }
-  100%{
-    transform: translateX(calc(-250px * 5));
+  50%{
+    transform: translateX(calc(-250px * 10));
   }
+  100%{
+    transform: translateX(calc(250px * 10));
+  }
+
 }
