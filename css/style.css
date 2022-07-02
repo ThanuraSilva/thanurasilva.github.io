@@ -9996,10 +9996,14 @@ h6,
   margin-top: 20px;
   padding: 20px;
   font-weight: bold;
+
+
 }
 
 .slide > img{
   margin-left: 50px;
+  width: 80px!important;
+  height: 80px!important;
 }
 
 @keyframes scroll-new {
@@ -10012,5 +10016,6 @@ h6,
   100%{
     transform: translateX(calc(250px * 10));
   }
+
 
 }
