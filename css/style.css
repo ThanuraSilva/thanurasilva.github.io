@@ -10006,6 +10006,23 @@ h6,
   height: 80px!important;
 }
 
+
+#badges-note-collector > img {
+  display: inline;
+  margin-top: 10px;
+}
+#badges-you-here> img{
+  display: inline;
+  margin-top: 10px;
+}
+#badges-lib-pro > img{
+  display: inline;
+  margin-top: 10px;
+}
+#badges-task-grab > img{
+  display: inline;
+  margin-top: 10px;
+}
 @keyframes scroll-new {
   0%{
     transform: translateX(0);
@@ -10016,6 +10033,5 @@ h6,
   100%{
     transform: translateX(calc(250px * 10));
   }
-
 
 }
