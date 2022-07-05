@@ -5,6 +5,8 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans:wght@700&display=swap');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -34,8 +36,12 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Roboto", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 
+
+}
+*{
+
+}
 *,
 *::before,
 *::after {
@@ -6355,14 +6361,19 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #2a2929 !important;
+  /*background-color: #2a2929 !important;*/
+  background: rgb(68,68,68);
+  background: -moz-linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
+  background: linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444444",endColorstr="#0e262b",GradientType=1)!important;
 
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #089e86 !important;
+  background-color: #efa51c !important;
 }
 
 .bg-secondary {
@@ -6432,7 +6443,7 @@ button.bg-light:focus {
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d2124 !important;
+  background-color: #2f75a9 !important;
 }
 
 .bg-white {
@@ -9522,11 +9533,12 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 .text-primary {
-  color: #ce730b !important;
+  color: #ffae00 !important;
+
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10022,6 +10034,19 @@ h6,
 #badges-task-grab > img{
   display: inline;
   margin-top: 10px;
+}
+.who-im-fontcolor{
+  color: #20c997;
+}
+.who-im-fontcolor-attributes{
+  color: #212323 !important;
+}
+.bgd-color{
+  background-color: #20c997;
+}
+#who-im-font{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 @keyframes scroll-new {
   0%{
