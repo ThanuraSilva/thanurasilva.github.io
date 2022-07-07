@@ -6369,6 +6369,41 @@ a.close.disabled {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444444",endColorstr="#0e262b",GradientType=1)!important;
 
 }
+.bubble{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: logo-flow 2s linear infinite;
+}
+
+.bubble > img{
+  opacity: 0.2;
+  filter: grayscale(200%);
+
+}
+@keyframes logo-flow {
+  0% {
+    transform: translateY(0) translateZ(0)
+
+  }
+  100% {
+    transform: translateY(-500%) translateZ(0)
+  }
+
+}
+
+.outer{
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+}
+
+
+
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -9770,6 +9805,7 @@ h6,
   border-radius: 45px;
 }
 
+
 .form-control {
   border-radius: 25px;
 }
@@ -10048,6 +10084,34 @@ h6,
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
+.font-color{
+  color: #2f75a9;
+  font-family: Chilanka, monospace;
+  font-weight: bold;
+}
+.social-links-linkid-twitter:hover{
+  background-color: #2f75a9;
+  color: white;
+  border: none;
+}
+.social-links-git-hub:hover{
+  background-color: #202121;
+  color: white;
+}
+.social-links-stackof:hover{
+  background-color: #efa51c;
+  color: #18170e;
+  border: none;
+}
+.social-links-trans{
+  transition-property: background-color;
+  transition-timing-function: ease-in;
+  transition-duration: 5s;
+}
+
+
+
+
 @keyframes scroll-new {
   0%{
     transform: translateX(0);
