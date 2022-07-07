@@ -6366,36 +6366,79 @@ a.close.disabled {
   background: -moz-linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
   background: linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444444",endColorstr="#0e262b",GradientType=1)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444444",endColorstr="#0e262b",GradientType=1);
+
 
 }
 .bubble{
-  display: flex;
+  position: relative;
   align-items: center;
-  justify-items: center;
-  width: 150px;
-  height: 150px;
+  justify-content:space-around;
+  width: 100%;
   border-radius: 50%;
   background-color: transparent;
-  animation: logo-flow 2s linear infinite;
+  margin-top: -70px;
+  opacity: 0.1;
+
 }
 
 .bubble > img{
-  opacity: 0.2;
   filter: grayscale(200%);
+  animation: logo-flow 10s linear infinite;
 
 }
 @keyframes logo-flow {
   0% {
-    transform: translateY(0) translateZ(0)
+    transform: translateY(-80vh);
+    opacity: 1;
+
+
 
   }
-  100% {
-    transform: translateY(-500%) translateZ(0)
+  40% {
+
+    opacity: 0.5;
+  }
+
+  60%{
+
+    opacity: 0.2;
+
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 0;
+
   }
 
 }
-
+#img-1 {
+  animation-delay: 3s;
+}
+#img-2{
+  animation-delay: 4s;
+}
+#img-3{
+  animation-delay: 5s;
+}
+#img-4{
+   animation-delay: 3.5s;
+}
+#img-5{
+  animation-delay: 5s;
+}
+#img-6{
+  animation-delay: 2.5s;
+}
+#img-7{
+  animation-delay: 1.5s;
+}
+#img-8{
+  animation-delay: 5.5s;
+}
+#img-9{
+  animation-delay: 3.5s;
+}
 .outer{
   flex-direction: row;
   position: absolute;
@@ -10033,7 +10076,7 @@ h6,
 }
 
 #frameworks-libs-1{
-  animation: scroll-new 30s linear infinite;
+  /*animation: scroll-new 30s linear infinite;*/
   width: calc(300px * 10);
   display: flex;
   flex-direction: row;
@@ -10044,14 +10087,12 @@ h6,
   margin-top: 20px;
   padding: 20px;
   font-weight: bold;
-
-
 }
 
 .slide > img{
-  margin-left: 50px;
-  width: 80px!important;
-  height: 80px!important;
+  margin-left: 20px;
+  width: 60px!important;
+  height: 60px!important;
 }
 
 
@@ -10108,9 +10149,11 @@ h6,
   transition-timing-function: ease-in;
   transition-duration: 5s;
 }
+.logo-skill-fw{
+  /*animation: scroll-new 10s linear infinite;*/
+   padding: 10px;
 
-
-
+}
 
 @keyframes scroll-new {
   0%{
