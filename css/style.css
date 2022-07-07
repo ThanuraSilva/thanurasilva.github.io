@@ -6361,18 +6361,18 @@ a.close.disabled {
 }
 
 .bg-primary {
-  /*background-color: #2a2929 !important;*/
+  background-color: #2a2929 !important;
   background: rgb(68,68,68);
   background: -moz-linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
   background: linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,5,8,0.4066001400560224) 0%, rgba(33,33,50,1) 0%, rgba(14,38,43,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444444",endColorstr="#0e262b",GradientType=1);
-
-
+  background-image: url("/img/logos/bg.jpg")!important;
+  opacity: 1;
+  filter: ;
 }
 .bubble{
   position: relative;
-  align-items: center;
   justify-content:space-around;
   width: 100%;
   border-radius: 50%;
@@ -6390,19 +6390,19 @@ a.close.disabled {
 @keyframes logo-flow {
   0% {
     transform: translateY(-80vh);
-    opacity: 1;
+
 
 
 
   }
   40% {
 
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   60%{
 
-    opacity: 0.2;
+    opacity: 0.5;
 
   }
   100%{
@@ -6413,18 +6413,25 @@ a.close.disabled {
 
 }
 #img-1 {
+  width: 300px;
+  height: 300px;
   animation-delay: 3s;
 }
 #img-2{
+
   animation-delay: 4s;
 }
 #img-3{
+  width: 100px;
+  height: 100px;
   animation-delay: 5s;
 }
 #img-4{
    animation-delay: 3.5s;
 }
 #img-5{
+  width: 200px;
+  height: 200px;
   animation-delay: 5s;
 }
 #img-6{
@@ -6434,11 +6441,27 @@ a.close.disabled {
   animation-delay: 1.5s;
 }
 #img-8{
+  width: 100px;
+  height: 100px;
   animation-delay: 5.5s;
 }
 #img-9{
+  width: 190px;
+  height: 190px;
   animation-delay: 3.5s;
 }
+#img-10{
+  animation-delay: 6.5s;
+}
+#img-11{
+  width: 180px;
+  height: 180px;
+  animation-delay: 8.5s;
+}
+
+
+
+
 .outer{
   flex-direction: row;
   position: absolute;
@@ -9615,7 +9638,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #ffae00 !important;
+  color: #ff7800 !important;
 
 }
 
@@ -10133,16 +10156,17 @@ h6,
 .social-links-linkid-twitter:hover{
   background-color: #2f75a9;
   color: white;
-  border: none;
+  border: 1px solid white;
 }
 .social-links-git-hub:hover{
   background-color: #202121;
   color: white;
+  border: 1px solid white;
 }
 .social-links-stackof:hover{
   background-color: #efa51c;
   color: #18170e;
-  border: none;
+  border: 1px solid white;
 }
 .social-links-trans{
   transition-property: background-color;
