@@ -10173,21 +10173,16 @@ h6,
   transition-timing-function: ease-in;
   transition-duration: 5s;
 }
-.logo-skill-fw{
-  /*animation: scroll-new 10s linear infinite;*/
-   padding: 10px;
-
+#cont-fw{
+  margin-left: 36vw;
 }
-
-@keyframes scroll-new {
-  0%{
-    transform: translateX(0);
-  }
-  50%{
-    transform: translateX(calc(-250px * 10));
-  }
-  100%{
-    transform: translateX(calc(250px * 10));
-  }
-
+.frameworks > img{
+   margin-right: 30px;
+   margin-top: 10px;
+   filter: grayscale(100%);
+   opacity: 0.8;
+}
+.frameworks > img:hover{
+  filter: grayscale(0);
+  opacity: 1;
 }
