@@ -2676,6 +2676,20 @@ fieldset:disabled a.btn {
   border-color: #ffae00;
 }
 
+.btn-outline-primary {
+  color: #e8d817;
+  border-color: #e8d817;
+}
+.change-outline{
+  color: #ffffff !important;
+  border-color: #e8d817 !important;
+}
+.change-outline:hover{
+  color: #090909 !important;
+  background-color:#e8d817!important;
+  border-color: #e8d817 !important;
+}
+
 .btn-outline-primary:hover {
   color: #0e0e0e;
   background-color: #ffae00;
@@ -10114,10 +10128,13 @@ h6,
 
 .slide > img{
   margin-left: 20px;
-  width: 60px!important;
-  height: 60px!important;
+  filter: grayscale(100%);
+  opacity: 0.8;
 }
-
+.slide > img:hover{
+  filter: grayscale(0);
+  opacity: 1;
+}
 
 #badges-note-collector > img {
   display: inline;
@@ -10150,7 +10167,7 @@ h6,
 }
 .font-color{
   color: #2f75a9;
-  font-family: Chilanka, monospace;
+  font-family: Roboto, monospace;
   font-weight: bold;
 }
 .social-links-linkid-twitter:hover{
@@ -10174,7 +10191,7 @@ h6,
   transition-duration: 5s;
 }
 #cont-fw{
-  margin-left: 36vw;
+  margin-left: 35vw;
 }
 .frameworks > img{
    margin-right: 30px;
