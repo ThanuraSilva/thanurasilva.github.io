@@ -2,7 +2,7 @@
   "name": "web-docs",
   "version": "1.0.0",
   "description": "",
-  "main": "./index.html",
+  "main": "docs/index.html",
   "directories": {
     "lib": "lib"
   },
