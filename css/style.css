@@ -10202,4 +10202,8 @@ h6,
 .frameworks > img:hover{
   filter: grayscale(0);
   opacity: 1;
+
+}
+.animated-text-color{
+  color: #efa51c;
 }
