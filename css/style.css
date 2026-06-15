@@ -10425,45 +10425,23 @@ h6,
 }
 /*Photo deck*/
 
-.photo-card{
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all .3s ease;
+.photo-card-small{
   height:100%;
+  display:flex;
+  flex-direction:column;
 }
 
-.photo-card:hover{
-  transform: translateY(-8px);
-  border-color:#18d5df;
-  box-shadow:0 15px 40px rgba(24,213,223,.15);
+.photo-card-small img{
+  width:auto;
+  height:auto;
+  object-fit:inherit;
 }
 
-.photo-card img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  transition:.4s;
-}
-
-.photo-card:hover img{
-  transform:scale(1.05);
-}
-
-.photo-card-content{
-  padding:20px;
-}
-
-.photo-card-content h5{
-  color:#fff;
-  font-weight:700;
-  margin-bottom:10px;
-}
-
-.photo-card-content p{
-  color:#cfcfcf;
-  margin-bottom:0;
-  line-height:1.7;
+.photo-card-small-content{
+  flex-grow:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:12px;
 }
